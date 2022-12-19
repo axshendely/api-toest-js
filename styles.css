@@ -1,0 +1,68 @@
+* {
+  top: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style-type: none;
+}
+
+h1 {
+  position: absolute;
+  left: 40%;
+}
+
+#ToDO {
+  height: 10%;
+  width: 60%;
+  top: 50px;
+  left: 15%;
+  position: absolute;
+  display: grid;
+  --colum-count: 1;
+  --row-count: 1fr;
+  grid-template-columns: repeat(var(--colum-count), var(--row-count));
+}
+#ToDO button {
+  width: 30%;
+  display: grid;
+  justify-self: center;
+  align-content: center;
+}
+
+#Task_listCatalog {
+  top: 100px;
+  position: absolute;
+  width: auto;
+  height: auto;
+  display: grid;
+  border: black 5px solid;
+  background-color: grey;
+  border-radius: 8px;
+  row-gap: 10px;
+  margin: 10%;
+}
+#Task_listCatalog li {
+  height: auto;
+  width: auto;
+  position: relative;
+  display: grid;
+  --colum-count: 2;
+  --row-count: 1fr;
+  grid-template-columns: repeat(var(--colum-count), var(--row-count));
+}
+#Task_listCatalog li button {
+  width: 120px;
+  height: 30px;
+  border-radius: 8px;
+  position: relative;
+  left: 0;
+}
+#Task_listCatalog li h3 {
+  position: relative;
+  top: 5px;
+  justify-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
